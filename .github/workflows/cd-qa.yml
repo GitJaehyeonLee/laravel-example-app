@@ -54,7 +54,7 @@ jobs:
       - name: Checkout kustomize repository
         uses: actions/checkout@v2
         with:
-          repository: wlgns5376/example-app-kustomize
+          repository: kakaocloudschool/example-app-kustomize
           token: ${{ secrets.ACTION_TOKEN }}
           path: example-app-kustomize
 
