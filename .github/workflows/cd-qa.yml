@@ -5,8 +5,8 @@ on:
     branches: [ main ]
 
 env:
-  IMAGE_NAME: ghcr.io/kakaocloudschoool/example-app
-#   IMAGE_NAME: ghcr.io/${{ github.repository_owner }}/example-app
+#   IMAGE_NAME: ghcr.io/kakaocloudschoool/example-app
+  IMAGE_NAME: ghcr.io/${{ github.repository_owner }}/example-app
 
 jobs:
   build:
@@ -28,7 +28,7 @@ jobs:
         with:
           registry: ghcr.io
           username: ${{ github.repository_owner }}
-          password: ${{ secrets.GIT_REPOSITORY_TOKEN }}
+          password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Push to GitHub Packages
         uses: docker/build-push-action@v2
