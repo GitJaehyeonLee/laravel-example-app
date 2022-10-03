@@ -5,7 +5,8 @@ on:
     branches: [ main ]
 
 env:
-  IMAGE_NAME: ghcr.io/${{ github.repository_owner }}/example-app
+  IMAGE_NAME: ghcr.io/kakaocloudschoool/example-app
+#   IMAGE_NAME: ghcr.io/${{ github.repository_owner }}/example-app
 
 jobs:
   build:
